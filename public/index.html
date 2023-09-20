@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Euphoria</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  
+</head>
+  <body>
+    <div id="root"></div>
+
+  </body>
+<!--
+  <script>
+          
+          (() =>
+           {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            const forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.from(forms).forEach(form => {
+              form.addEventListener('Submit', event => {
+                if (!form.checkValidity()) {
+                  event.preventDefault()
+                  event.stopPropagation()  
+                }
+
+                form.classList.add('was-validated')
+              }, false)
+            })
+          })
+          ();
+
+
+              //show / hide passowrd 
+                  const togglePassword = document.querySelector('#togglePassword');
+                  const password = document.querySelector('#id_password');
+                  togglePassword.addEventListener('click', function (e) {
+
+                    const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+                    password.setAttribute('type', type);
+                   
+                    this.classList.toggle('fa-eye');
+                }
+                );
+
+
+                    /* this function is called when we
+                          click on the submit button*/
+
+                    function numberValidation() {
+                        event.preventDefault();
+                        let n = document.form.numbers.value;
+                        if (isNaN(n)) {
+                            document.getElementById("numberText")
+                                .innerHTML = "Please enter Numeric value";
+                            return false;
+                        } 
+                        else {
+                          
+                            document.getElementById("numberText")
+                                .innerHTML = " " ;
+                            return true;
+                        }
+                                                 }
+                  
+                      
+  </script>
+-->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>  
+
+      <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.min.js"> -->
+      <!-- </script> -->
+         
+         <!-- <script>
+          const plus = document.querySelector(".plus"),
+                    minus = document.querySelector(".minus"),
+                    num = document.querySelector(".num");
+                    let a = 1;
+
+                    plus.addEventListener("click" , () =>{
+                        a++;
+                        num.innerText = a;
+                    
+                    });
+                  
+                    minus.addEventListener("click" , () =>{
+                        a--;
+                        num.innerText = a;
+                    
+                    });
+        </script> -->
+</html>

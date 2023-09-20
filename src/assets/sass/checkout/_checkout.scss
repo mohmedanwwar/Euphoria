@@ -1,0 +1,359 @@
+.chechout-seaction{
+    .way{
+        padding-bottom: 45px;
+        width: 100%;
+        background-color: #fff;
+        h6{
+            color: $color-primary;
+             font-family: $font-text;
+             font-size: 18px;
+             font-weight: 500;
+             line-height: normal;
+             margin: 0;
+             span{
+                color: $color-dark;
+                font-weight: 700;
+             }
+            
+             
+             i{
+                font-size: 15px;
+                margin-inline:10px ;
+              }
+            
+          }
+         
+        }
+    .header{
+        h2{
+            @include style_header;  
+           }
+            & h2::before{
+             content:"";
+            @include  style_before;
+             
+         }
+         p{
+            color: $color-dark;
+            font-family: $font-title;
+            font-size: 22px;
+            font-weight: 600;
+            line-height: 33.5px; /* 239.286% */
+            letter-spacing: 0.44px;
+                    }
+    }
+
+       form{ 
+        label{
+            color: $color-dark;
+            font-family: $font-text;
+            font-size: 16px;
+            font-weight: 600;
+            letter-spacing: 0.32px;
+        }
+        .form-select,input{
+                        border: none;
+                        background-color:$color-white;
+                        padding: 10px;
+                        margin-bottom: 10px;
+                        &::placeholder{
+                          
+                            padding: 16px 0px;
+                            align-items: center;
+                            gap: 12px;
+                            border-radius: 8px;
+                          
+                        }
+                        
+                    }
+                    button{
+                        margin-block: 20px;
+                        padding: 14px 40px;
+                         border-radius: 8px;
+                         background: #8A33FD;
+                         span{
+                            color: #FFF;
+                            text-align: center;
+                            font-family: Causten;
+                            font-size: 18px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: normal;
+                          }
+                    }
+          }
+      .order-summary{
+                       width: 100%;
+                        border: 3px solid $color-white;
+                    
+                    
+                       .box{
+                              width: 90%;
+                             margin: auto;
+
+                             hr{
+                                 color: $color-primary;
+                                 stroke-width: 1px;
+                             }
+                        .heading{
+                            h1{
+                                padding-top: 50px;
+                                padding-left: 15px;
+                                color: $color-dark;
+                                font-family: $font-title;
+                                font-size: 24px;
+                                font-style: normal;
+                                font-weight: 600;
+                                line-height: normal;
+                            }
+                           }
+        .orders{
+         display: flex;
+         align-items: center;
+
+         .photo{
+                                width: 120px;
+                                height: 80px;
+                                border-radius: 10px;
+                              background-image: url(../../images/woman.jpeg);
+                              background-size: cover;
+               } 
+
+                           
+         .order{
+            display: flex;
+            width: 100%;
+            ul{
+                padding-inline: 15px;
+                li{
+                    list-style: none;
+                    color: $color-dark;
+                    font-family: $font-text;
+                    font-size: 14px;
+                    font-weight: 800;
+                    letter-spacing: 0.28px;
+                    h1{
+                        font-size: 18px;
+                        color: $color-dark;
+                        font-family: $font-text;
+                        font-weight: 700;
+                        letter-spacing: 0.36px;
+                    }
+                
+                }
+
+            }                        
+                                    
+               }
+                span{
+                                    color: $color-primary;
+                                    font-family: $font-text;
+                                    font-size: 14px;
+                                    font-weight: 700;
+                                    letter-spacing: 0.28
+                     }
+                           
+               }
+
+               .item-order{
+                ul{
+                    padding-inline: 15px;
+                    li{
+                        list-style: none;
+                        color: $color-dark;
+                        display: flex;
+                        justify-content: space-between;
+                        font-family: $font-text;
+                        font-size: 14px;
+                        font-weight: 800;
+                        letter-spacing: 0.28px;
+                        h1{
+                            font-size: 18px;
+                            color: $color-dark;
+                            font-family: $font-text;
+                            font-weight: 700;
+                            letter-spacing: 0.36px;
+                        }
+                        h5{
+                            color: $color-dark;
+                            font-family: $font-text;
+                            font-size: 16px;
+                            font-weight: 700;
+                          }
+                    
+                    }
+    
+                }    
+
+               
+
+              }
+                       }
+                   }
+
+                   .accordion{
+                    .accordion-button {
+                       
+   
+                       h1{
+                           color: $color-dark;
+                          font-family: $font-title;
+                          font-size: 22px;
+                          font-weight: 600;
+                          line-height: 33.5px; 
+                          letter-spacing: 0.44px
+                      }
+                      p{
+                       color: $color-dark;
+                       font-family: $font-text;
+                       font-size: 16px;
+                       font-weight: 400;
+                     
+                   }
+   
+                        
+                    }
+                      
+                        
+                      
+                       .accordion-body{
+                           background-color: $color-white;
+                           border-radius: 10px;
+                           margin-block: 20px;
+                           position: relative;
+                           
+                           .form-radio{
+                               width: 100%;
+                               margin: auto;
+                               display: flex;
+                               align-items: center;
+                               h2,p{
+                                   margin-left:10px;
+                               }    
+                               h3{
+                                   color: $color-dark;
+                                   font-family: $font-text;
+                                   font-size: 20px;
+                                   font-weight: 700;
+                                   margin: 10px 5px;
+                                  
+                               }   
+                           }
+   
+                          
+                           h2{
+                               font-size: 20px;
+                               font-family: $font-text;
+                               color: $color-dark;
+                               font-weight: 700;
+                              
+                           }
+                           p{
+                               color: $color-dark;
+                               font-size: 16px;
+                               font-family: $font-text;
+                               margin-left: 0px;
+                           }
+                           span{
+                               position: absolute;
+                               top: 45%;
+                               left: 92%;
+                           }
+                           input[type=radio] {
+                               accent-color:$color-primary;
+                               width: 18px;
+                               height: 18px;
+                               
+                           }
+   
+                           .more-payment{
+                               width: 90%;
+                               margin: auto;
+   
+                               .payment{
+                                   
+   
+                                   .nav{
+                                       
+                                      .nav-item{
+                                       display: flex;
+                                      }
+                                      .active{
+                                     border: 1px solid $color-dark;
+                                     border-radius: 50px;
+                                      }
+                                      input[type=radio]{
+                                       display: none;
+                                      }
+                                      
+                                   }
+                                   button{
+                                       border: none;
+                                       background-color: $color-white;
+                                      
+                                   }
+                               }
+                               
+                           }
+                          
+                         
+                           .form-control{
+                               padding: 10px;
+                               margin-block:15px ;
+                               border: 1px solid $color-dark;
+                               border-radius: 5px;
+                               background-color: inherit;
+                               &::placeholder{
+                                   padding: 16px 0px;
+                                   align-items: center;
+                                   gap: 12px;
+                                   border-radius: 8px;
+                                  
+   
+                               }
+                               
+                           }
+                           .option1-payment,.option-payment{
+                               .hidepass{
+                                   display: flex;
+                                   width: 48%;
+                                   align-items: center;
+                                   margin-block:15px ;
+                                   justify-content: space-between;
+                                  border: 1px solid $color-dark;
+                                   border-radius: 5px;
+                                  background-color: inherit;
+                                  
+                                   input{
+                                       margin: 0px;
+                                       border: none;
+                                       &:focus{
+                                          border: none;
+                                          box-shadow: none;
+   
+                                       }
+                                   }
+                                   i{
+                                       cursor: pointer;
+                                       color: $color-primary;
+                                   }
+   
+                               }
+                               
+                           }
+                           
+                           
+                       }
+                 }
+              .pay-now{
+               
+            padding: 16px 20px;
+            align-items: center;
+                border-radius: 8px;
+            background: $color-second;
+            margin-block: 30px;
+            border: none;
+            color: #fff;
+            }
+
+}

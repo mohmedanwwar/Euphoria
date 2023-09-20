@@ -1,0 +1,171 @@
+.profile-seaction{
+    width: 100%; 
+    .way{
+    padding-bottom: 45px;
+    width: 100%;
+    background-color: #fff;
+    h6{
+        color: $color-primary;
+         font-family: $font-text;
+         font-size: 18px;
+         font-weight: 500;
+         line-height: normal;
+         margin: 0;
+         span{
+            color: $color-dark;
+            font-weight: 700;
+         }
+        
+         
+         i{
+            font-size: 15px;
+            margin-inline:10px ;
+          }
+        
+      }
+     
+    }
+         @include vertical-nav;
+    .forms{
+        width: 75%;
+        
+        h1{
+         color: $color-dark;
+        font-family: $font-title;
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 33.5px; 
+        letter-spacing: 0.56px;
+        }
+        h4{
+            color: $color-dark;
+            font-family: $font-title;
+            font-size: 22px;
+            font-weight: 600;
+            line-height: 33.5px; /* 152.273% */
+            letter-spacing: 0.44px;
+        }
+        label{
+            padding-top: 35px;
+            margin:10px auto;
+            color: $color-primary;
+            font-family: $font-text;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+        }
+        input{
+            width: 90%;
+            padding: 10px;
+            border: none;
+
+            &:active,
+            &:focus,
+            &:focus-visible {
+                border: none;
+                outline: 0;
+            }
+        }
+        button{
+              border: none;
+              background-color: #fff;
+              font-family: $font-text;
+              color: $color-dark;
+              font-size: 18px;
+              font-weight: 600;
+            float: right;
+        }
+        .address{
+            width: 100%;
+            padding-bottom: 60px;
+            // background-color: red;
+            .add{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                h2{ 
+                    color: $color-dark;
+                    font-family:$font-title;
+                    font-size: 22px;
+                    font-weight: 600;
+                    line-height: 33.5px; 
+                    letter-spacing: 0.44px;
+                }
+                &.addmore{
+                    border: none;
+                    background-color: #fff;
+                    font-family: $font-text;
+                    color: $color-dark;
+                    font-size: 18px;
+                    font-weight: 600;
+                 
+                }
+            }
+            .details-address{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding-top:20px ;
+                
+                
+                .address1{
+                    padding: 40px;
+                    margin: auto;
+                    border-radius: 5px;
+                    margin-inline: 10px;
+                    background-color: $color-white;
+                }
+                .address2{
+                    padding: 40px;
+                    margin: auto;
+                    border-radius: 5px;
+                    margin-inline: 10px;
+                    background-color: $color-white;
+                }
+                h3{
+                    color: $color-dark;
+                    font-family: $font-text;
+                    font-size: 20px;
+                    font-weight: 600;
+                }
+
+                p,span{
+                    color: $color-primary;
+                    font-family: $font-text;
+                    padding-top: 10px;
+                    font-size: 16px;
+                    font-weight: 500;
+                  
+                }
+                .btn-address{
+                   
+                   background: inherit;
+                    border: 1px solid $color-primary;
+                    color: $color-primary;
+                    float: left;
+                    padding: 7px 19px;
+                    align-items: center;
+                    margin-inline:5px ;
+                    border-radius: 5px;
+                   
+                }
+                
+                .morebut{
+                    padding-top: 20px;
+                }
+                .edit{
+                    background: inherit;
+                     border:none;
+                     color: $color-dark;
+                     padding-top:20px ;
+                     float: left;
+                     
+                    
+                }
+            }
+            
+        }
+    }
+   
+}

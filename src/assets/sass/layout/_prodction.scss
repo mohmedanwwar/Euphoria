@@ -1,0 +1,126 @@
+.prodction_section {
+    padding: 50px;
+  
+   
+      h2{
+         @include style_header;  
+        }
+         & h2::before{
+          content:"";
+         @include  style_before;
+          
+      }
+
+      .descrption{
+        .title{
+            .list{
+                width: 90%;
+                height: 50px;
+                background-color:#fff;
+               
+                button{
+                    @include btn-style;
+                 
+                    &.active{
+                        color: $color-dark;
+                        font-weight: 500;
+                        &::after{
+                            margin-top: 10px;
+                            content: "";
+                          width: 60px;
+                          height: 2px;
+                          background-color: #000;
+                          display: block;
+                        
+
+                         }
+                      }
+
+                    span{
+                        @include prodaction-style;
+                        background: $color-second;
+                    }
+                    .black{
+                        @include prodaction-style;
+                        background: $color-dark;
+                    }
+                      
+                } 
+                 }
+            p{
+
+              color: $color-primary;
+              font-family: $font-text;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 25px; /* 156.25% */
+              letter-spacing: 0.32px;
+        }
+          }
+
+          .tap{
+            width: 100%;
+            border-radius: 12px;
+             opacity: 0.6;
+             background: $color-white;
+             display: table;
+             margin-top: 100px;
+
+            .horizonal{
+                display: table-row;
+                
+            }
+            .nobord{
+                margin-top: 0;
+                width: 40%;
+                display: table-cell; 
+                @include pargh-style;
+            }
+             .bord{
+                border-left: 1px solid #BEBCBD;
+                width: 30%;
+                display: table-cell; 
+                @include pargh-style;
+                  }
+                  
+            
+
+
+            }
+     }
+
+      .media{
+       margin-left: 60px;
+        width: 90%;
+        height: 85%;
+        background-image:linear-gradient(
+            to right bottom,
+            rgba($color-dark, 0.4),
+            rgba($color-dark, 0.4));
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 12px;
+        position: relative;
+        span{
+            position: absolute;
+            top: 10%;
+            right: 7%;
+            @include style;
+        }
+        a{
+            position: absolute;
+            font-size: 50px;
+            top: 38%;
+            left: 45%;
+        }
+        p{
+            position: absolute;
+            bottom: 5%;
+            left: 13%; 
+            @include style;
+        }
+      }
+  
+}

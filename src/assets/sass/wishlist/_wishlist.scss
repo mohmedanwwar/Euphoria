@@ -1,0 +1,121 @@
+.wishlist-secation{
+    width: 100%; 
+    .way{
+    padding-bottom: 45px;
+    width: 100%;
+    h6{
+        color: $color-primary;
+         font-family: $font-text;
+         font-size: 18px;
+         font-weight: 500;
+         line-height: normal;
+         margin: 0;
+         span{
+            color: $color-dark;
+            font-weight: 700;
+         }
+        
+         
+         i{
+            font-size: 15px;
+            margin-inline:10px ;
+          }
+        
+      }
+     
+    }
+         @include vertical-nav;
+
+         .wishlist{
+            width: 75%;
+            h1{
+                color: $color-dark;
+               font-family: $font-title;
+               font-size: 28px;
+               font-weight: 600;
+               line-height: 33.5px; 
+               letter-spacing: 0.56px;
+               }
+               .alert{
+                display: flex;
+                align-items: center;
+                width: 100%;
+                .orders{
+                    display: flex;
+                    align-items: center;
+                    width: 75%;
+                    margin-inline: 30px;
+        
+            .photo{
+                width: 120px;
+                height: 120px;
+                border-radius: 10px;
+                 background-size: cover;
+                  } 
+        
+            .item-order{
+               
+                ul{
+                   margin: auto;
+                 
+                    li{
+                        list-style: none;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                       
+                        h1{
+                            font-size: 22px;
+                            color: $color-dark;
+                            font-family: $font-text;
+                            font-weight: 700;
+                            letter-spacing: 0.44px;
+                        }
+                        h5{
+                            color: $color-dark;
+                            font-family: $font-text;
+                            font-size: 22px;
+                             font-weight: 500;
+                             margin-top: 10px;
+                             letter-spacing: 0.44px;
+                          }
+                          span{
+                            font-size: 22px;
+                            color: $color-primary;
+                            font-family: $font-text;
+                            font-weight: 500;
+                            letter-spacing: 0.44px; 
+                          }
+                    
+                    }
+        
+                }    
+              }
+        
+                        
+               }
+               .pricebtn{
+                width: 30%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                h1{
+                       color: $color-primary;
+                        font-family: $font-text;
+                        font-size: 22px;
+                        font-weight: 700;
+                        letter-spacing: 0.44px;
+                }
+                button{
+                    border-radius: 8px;
+                     background: $color-second;
+                     padding: 14px 28px;
+                     border: none;
+                     color: #fff;
+                }
+
+               }
+               }
+         }
+       
+}

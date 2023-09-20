@@ -1,0 +1,118 @@
+nav {
+    border-bottom: 1px solid #BEBCBD;
+    ul{
+        padding-bottom: 7px;
+    }
+    li {
+    padding-top: 5px;
+    padding-left: 30px;
+    font-size: 22px;
+    color: $color-primary;
+    background-color: #ffffff;
+    }
+    a{
+    text-align: left;
+    color:  $color-primary;
+    font-family: $font-text;
+
+    }
+   
+    i{
+    font-size: 20px;
+    margin-inline: 10px;
+    }
+  
+    .Search{
+        display: flex;
+        align-items: center;
+        background-color:$color-white;
+        border: 1px solid  $color-white;
+        border-radius: 10px;
+         height: 50px;
+         margin-inline:50px;
+         
+         .bnt{
+          padding: 0;
+          margin: 0;
+          background-color:$color-white;
+          border: none;
+
+          &:active,
+          &:focus,
+          &:focus-visible {
+              border: none;
+              border-radius: 10px;
+              outline: 0;
+          }
+          
+   
+        }
+     
+        i{
+            color: $color-primary;
+        }
+    }
+    
+    .icon{
+        display: flex;
+        align-items: center;
+        background-color:$color-white;
+        border: 1px solid  $color-white;
+        border-radius: 10px;
+        margin: 5px;
+        height: 50px;  
+        cursor: pointer;  
+         
+         
+        i{
+            color:$color-dark;
+        }
+      
+    }
+
+ 
+    }
+  
+
+    @media (max-width:991px){
+         
+        nav {
+            ul{
+                padding-bottom: 10px;
+            }
+            li {
+                margin: auto;
+          
+            }
+           
+            i{
+            font-size: 20px;
+            margin-inline: 10px;
+            }
+          
+            .Search{
+            
+                 width: 100%;
+                 margin-inline:0px;
+                 
+                 .bnt{
+                 width: 80%;
+                }
+             
+            }
+            
+            .icon{
+             
+                border-radius: 10px;
+                margin:5px;
+                height: 50px;  
+                cursor: pointer;  
+                 
+                 
+               
+            }
+            
+        
+         
+            }
+    }

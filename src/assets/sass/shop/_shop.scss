@@ -1,0 +1,125 @@
+
+//   shop section
+
+
+.shop_section {
+  padding: 50px;
+
+    
+      h2{
+         @include style_header;  
+        }
+         & h2::before{
+          content:"";
+         @include  style_before;
+          
+      }
+  
+       a{
+        text-decoration: none;
+        color:  $color-dark;
+        .box {
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 10px;
+          height: 370px;  
+          background-size: cover; 
+          background-position: center;
+  
+           
+            .new {
+              display: flex;
+              width: 32.359px;
+              height: 32.359px;
+              position: absolute;
+              top: 8%;
+              right:6%;
+              background-color: #ffff;
+              border-radius: 100%;
+              
+              .like{
+                   margin: 7px auto;
+                   font-size: 17px;
+                  color:$color-black-icon ;
+                
+                .chek:checked +i
+                  {
+                    font-weight: 900;
+                    color:$color-red;
+                      }
+                      .chek{
+                        display: none;
+                      }
+                  }
+                }
+              }
+
+    
+      
+          .detail-box {
+            padding-top: 20px;
+            display: flex;
+            justify-content: space-between;
+    
+            .text{
+              h5 {
+                  color: $color-dark;
+                    font-family: $font-text;
+                   font-size: 16px;
+                   font-style: normal;
+                    font-weight: 600;
+                   line-height: normal;
+                   text-decoration: none;
+                   
+                   &:hover{
+                  @include hover-text;
+                  }
+                  }
+              p{
+                color: $color-primary;
+                 font-family: $font-text;
+                  font-size: 14px;
+                   font-style: normal;
+                    font-weight: 500;
+                      line-height: normal;
+                      text-decoration: none;  
+                     
+                      &:hover{
+                        @include hover-text;
+                          
+                        }
+              }
+            }
+            .price{
+              background-color: $color-white;
+              width: 70px;
+              height: 35px;
+              border-radius: 10px;
+              color: $color-dark;
+              display: flex;
+              span{
+                margin: 8px auto;
+                 align-items: center;
+                 font-family: $font-text;
+                  font-size: 14px;
+               font-weight: bold;
+                            
+              }
+              &:hover{
+                background-color:  $color-second;
+               color: $color-white;
+           }
+            }
+              
+          }
+      
+        
+        }
+       }
+   
+  
+  
+  
+  // end shop section

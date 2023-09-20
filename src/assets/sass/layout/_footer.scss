@@ -1,0 +1,133 @@
+
+/* info section */
+.info_section {
+  position: relative;
+  background-color:#3C4242;;
+  color: $color-white;
+  font-size: 18px;
+  font-family: $font-text;
+  font-weight: 500;
+  margin: 0;
+ 
+  .row{
+    width: 85%;
+    margin: auto;
+
+    .social_box {
+      display: flex;
+      align-items: center;
+      padding-top: 30px;
+      a {
+        &:first-child{
+          margin: 0px 0px;
+        }
+        margin: 0px 10px;
+        color: $color-white;
+        font-size: 24px;
+    
+      
+      }
+
+      .social_icon {
+         
+        background-color: $color-white;
+        color: $color-black-icon;
+        font-size: 20px;
+        width:  37.024px;
+        text-align: center;
+        padding: 10px ;
+        border-radius: 10px;
+        i{
+            width: 16.376px;
+        }
+      }
+      
+    }
+    
+    .app {
+        justify-content: end;
+        padding-top: 30px;
+     
+        h1{
+            font-size: 28.579px;
+            font-family: $font-text;
+            font-weight: 700;
+        }
+    }
+
+  }
+
+
+
+  a {
+    text-transform: none;
+    font-family: $font-text;
+  }
+
+
+  h6 {
+    margin-top: 50px;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: $font-title;
+    margin-bottom: 25px;
+  }
+
+
+  p {
+    color: $color-white;
+  }
+
+  }
+
+
+.footer_section{
+ 
+    margin-top: 45px;
+    font-size: 28.579px;
+    font-weight: 500;
+    font-family: $font-text;
+    align-items: center;
+    .accordion{
+            width: 85%;
+            margin: auto;
+          
+        }
+           
+    p{
+      display: flex;
+      font-size: 30px;
+      color: $color-white;
+      font-family: $font-text;
+      padding: 0px 45px;
+      margin: 10px auto;
+        width: 85%;
+     }
+   
+     hr{
+      border: 1px solid #fff;
+     }
+
+    span{
+      margin-bottom: 40PX;
+      text-align: center;
+      width: 95%;
+      font-size: 20px;
+      color: $color-white;
+      font-family: $font-text;
+     
+           }
+
+
+     a{
+      color: $color-white;
+      font-family: $font-text;
+  
+    }
+  }
+  
+ 
+
+  
+  
+  /* end footer section*/

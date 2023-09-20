@@ -1,0 +1,289 @@
+.way{
+  padding-bottom: 45px;
+  width: 100%;
+  background-color: #fff;
+  h6{
+      color: $color-primary;
+       font-family: $font-text;
+       font-size: 18px;
+       font-weight: 500;
+       line-height: normal;
+       margin: 0;
+       span{
+          color: $color-dark;
+          font-weight: 700;
+       }
+      
+       
+       i{
+          font-size: 15px;
+          margin-inline:10px ;
+        }
+      
+    }
+   
+  }
+  .Test{
+    padding-bottom: 30px;
+    p{
+      color: $color-primary;
+      font-family: $font-text;
+      font-size: 14px;
+      font-weight: 400;
+      letter-spacing: 0.28px;
+      margin: 0px;
+      a{
+        text-decoration: none;
+        color: $color-second;
+        font-family: $font-text;
+        font-weight: 600;
+        font-size: 14px;
+        letter-spacing: 0.28px;
+      }
+    }
+  }
+  
+  .orders{
+            display: flex;
+            align-items: center;
+
+    .photo{
+        width: 120px;
+        height: 120px;
+        border-radius: 10px;
+         background-size: cover;
+          } 
+
+    .order{
+          ul{
+           padding-inline: 15px;
+          li{
+            list-style: none;
+            color: $color-dark;
+            font-family: $font-text;
+            font-size: 18px;
+            font-weight: 700;
+            letter-spacing: 0.36px;
+            text-align: left;
+            span{
+
+              color: $color-primary;
+              font-family: $font-text;
+              font-size: 14px;
+              font-weight: 700;
+              letter-spacing: 0.28;
+           }
+    
+            }
+            }
+          }
+   
+
+                
+       }
+
+   .table{
+    vertical-align: middle  ;
+    thead{
+      justify-content: space-around;
+          th{
+            padding: 25px;
+            text-transform: uppercase;
+            color: #fff;
+            font-family: $font-text;
+            font-size: 18px;
+            font-weight: 600;
+            text-align: center;
+          }
+          .Productdetails{
+            text-align: left;
+            width: 30%;
+          }
+          
+        }
+        tbody{
+        
+          tr{
+            text-align: center;
+            border-bottom:1px solid #BEBCBD; 
+            height: 185px;
+            padding: 10px;
+            &:last-child{
+              border: none;
+             
+            }
+            span{
+              font-family: $font-text;
+              color: $color-dark;
+              font-size: 18px;
+              font-weight: 700;
+            }
+            p{
+              color:#BEBCBD;
+              font-family: $font-text;
+              font-weight: 700;
+              font-size: 18px;
+              margin: 0px 0px ;
+              letter-spacing: 0.36px;
+            }
+        
+              .quantity{
+            
+                width: 100px;
+                border-radius: 10px;
+                padding: 6px;
+                display: flex;
+                justify-content: space-around;
+                background-color: $color-white;
+                margin: 0 auto;
+                span{
+                  cursor: pointer;
+                
+                  font-size: 16px;
+                  font-weight: 400;
+                }
+              }
+            
+            
+         
+          }
+        }
+       }
+
+
+       .bottomtext{
+        background-color: $color-white;
+        margin-top: 50px;
+        position: relative;
+        h1{
+          padding-top: 20px;
+          color: $color-dark;
+          font-family: $font-text;
+          font-size: 24px;
+          font-weight: 600;
+          margin: 10px;
+        
+        }
+        p{
+          color: $color-primary;
+          font-family: $font-text;
+          font-size: 16px;
+          font-weight: 400;
+          margin: 10px;
+        
+        }
+        .Apply{
+           width: 361px;
+           height: 43px;
+           border: 1px solid #BEBCBD;
+           border-radius: 12px;
+           margin-bottom:30px ;
+           display: flex;
+           overflow: hidden;
+          input{
+           width: 200px;
+           border: none;
+          
+          }
+          button{
+            width: 161px;
+            color: #fff;
+            font-size: 16px;
+            font-family: $font-text;
+            font-weight: 600;
+            border: none;
+             background-color: $color-second;
+          
+           
+          }
+         
+        }
+
+        a{
+          button{
+            width: 232px;
+            padding: 12px 0px;
+            margin-bottom: 30px;
+            border: 1px solid #BEBCBD;
+            background-color: #fff;
+            border-radius: 12px;
+
+            span{
+              color: $color-dark;
+              font-family: $font-text;
+              font-weight: 600;
+              font-size: 16px;
+
+            }
+          }
+        }
+       }
+       .total{
+        width: 90%;
+        align-items: center;
+        background-color: #F3F3F3;
+
+        .item-order{
+          ul{
+             padding: 6px;
+              li{
+                  list-style: none;
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-around;
+                 
+                  h1{
+                      font-size: 22px;
+                      color: $color-dark;
+                      font-family: $font-text;
+                      font-weight: 500;
+                      letter-spacing: 0.44px;
+                  }
+                  h5{
+                      color: $color-dark;
+                      font-family: $font-text;
+                      font-size: 22px;
+                       font-weight: 500;
+                       margin-top: 10px;
+                       letter-spacing: 0.44px;
+                    }
+                    span{
+                      font-size: 22px;
+                      color: $color-dark;
+                      font-family: $font-text;
+                      font-weight: 700;
+                      letter-spacing: 0.44px; 
+                    }
+              
+              }
+
+          }    
+
+         
+
+        }
+        .Checkbtn{
+         
+          display: flex;
+          align-items: center;
+          margin: 50px;
+           button{
+            margin: auto;
+            border-radius: 8px;
+            border: none;
+            padding: 12px 20px;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+           background: $color-second;
+
+           span{
+              color: #fff;
+              font-family: $font-text;
+              font-weight: 600;
+              font-size: 18px;
+           }
+           }
+        }
+       
+       }

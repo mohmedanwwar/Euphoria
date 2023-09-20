@@ -1,0 +1,173 @@
+
+.navbar{
+    ul{
+        width: 50%;
+      justify-content: space-between;
+    }
+   .lang{
+    .dropdown{
+    margin:8px;
+
+        a{
+            border: none;
+            background-color: inherit;
+            color: $color-dark;
+            font-size: 18px;
+            font-weight: 400;
+            font-family: $font-text;
+        }
+    }
+   }
+   .login-btn{
+        width: 30%;
+          justify-content: space-between;
+          display: inline-flex;
+          button{
+            padding: 12px 48px;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+            border-radius: 8px;
+            font-family: $font-text;
+            font-size: 18px;
+             font-weight: 500;
+             border: none;
+          }
+          .btn-login{
+            color: #fff;
+            background: $color-second;
+          
+          }
+          .btn-sign{
+            background-color: inherit;
+           outline:auto;
+           span{
+            color: $color-second;
+           }
+            
+          }
+
+   }
+}
+
+.image-login{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.form-login{
+    width: 40%;
+    margin: auto;
+    height: 800px;
+       h1{
+       margin-top: 50px;
+       margin-bottom: 20px;
+        color: #333;
+        font-family:$font-title;
+        font-size: 34px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: 0.68px;
+       }
+       .google {
+       
+        a{
+            width: 100%;
+            margin-block: 10px;
+            color: $color-second;
+            text-align: center;
+            font-family: $font-text;
+            font-size: 18px;
+            font-weight: 600;
+        }
+       
+        
+       }
+       .or{
+        width: 100%;
+        margin-block:50px ;
+        text-align: center;
+        color: $color-primary;
+        position: relative;
+        
+        &::after{
+            content: "";
+            width: calc(50% - 30px);
+            height: 1px;
+            background-color:$color-primary;
+            position: absolute;
+            right: 0%;
+             
+           
+        }
+        &::before{
+            content: "";
+            width: calc(50% - 30px);
+            height: 1px;
+            background-color:$color-primary;
+            position: absolute;
+            left: 0%;
+          
+           
+            
+        }
+        span{
+            margin-bottom: 50px;
+            position: relative;
+            bottom: 13px;
+         
+        }
+       }
+       .form-label{
+     
+        color: $color-dark;
+        font-family: $font-text;
+        font-size: 18px;
+        font-weight: 400;
+        letter-spacing: 0.36px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+             i{
+               font-size: 12px;
+               color: $color-primary;
+               span{
+                  margin-inline:3px ;
+                 text-transform: lowercase;
+               }
+             }
+
+       }
+       .froget{
+        float: right;
+        color: $color-dark;
+        font-size: 16px;
+        font-weight: 400;
+        font-family: $font-text;
+    }
+    .signup{
+        margin-top: 40px;
+        margin-bottom: 10px;
+        width: 155px;
+        padding: 10px 20px;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        background-color: $color-second;
+    }
+    p{
+        color: $color-dark;
+        font-size: 16px;
+        font-family: $font-text;
+        font-weight: 400;
+        a{
+            color: $color-dark;
+            font-size: 16px;
+            font-family: $font-text;
+            font-weight: 400;
+        }
+    }
+}

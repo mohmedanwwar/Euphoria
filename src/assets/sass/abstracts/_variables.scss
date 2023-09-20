@@ -1,0 +1,29 @@
+// COLOR
+$color-primary:#807D7E;
+$color-dark:#3C4242;
+$color-second:#8A33FD;
+$color-white:#F6F6F6;
+$color-black-icon:#2A2F2F;
+$color-red:red;
+
+
+
+
+
+// FONTS
+@font-face {
+    font-family: Core Sans C;
+    src: url(../../css/fonts/CoreSansC-45Regular/CoreSansC-45Regular.ttf);
+    font-style: bold;
+    }
+    @font-face {
+      font-family: Causten;
+      src: url(../../css/fonts/Causten-Round/Causten-Light.otf);
+    }
+$font-title:Core Sans C;
+$font-text:Causten;
+
+
+
+
+

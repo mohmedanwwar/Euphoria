@@ -1,0 +1,105 @@
+.delivery-address{ 
+    .way{
+        padding-bottom: 45px;
+        width: 100%;
+        background-color: #fff;
+        h6{
+            color: $color-primary;
+             font-family: $font-text;
+             font-size: 18px;
+             font-weight: 500;
+             line-height: normal;
+             margin: 0;
+             span{
+                color: $color-dark;
+                font-weight: 700;
+             }
+            
+             
+             i{
+                font-size: 15px;
+                margin-inline:10px ;
+              }
+            
+          }
+    }
+    @include vertical-nav;
+
+    form{ 
+        width: 75%;
+        h1{
+            color: $color-dark;
+           font-family: $font-title;
+           font-size: 28px;
+           font-weight: 600;
+           line-height: 33.5px; 
+           letter-spacing: 0.56px;
+           }
+        label{
+            color: $color-dark;
+            font-family: $font-text;
+            font-size: 16px;
+            font-weight: 600;
+            letter-spacing: 0.32px;
+        }
+        .form-select,input{
+            border: none;
+             background-color:$color-white;
+             padding: 10px;
+             margin-bottom: 10px;
+             &::placeholder{
+                          
+              padding: 16px 0px;
+              align-items: center;
+              gap: 12px;
+              border-radius: 8px;
+                          
+                           }
+                        
+                    }   
+                    textarea{
+                        resize: none;
+                        padding: 20px 20px;
+                        background-color: $color-white;
+                   
+                    }        
+                    button{
+                        margin-block: 30px;
+                        padding: 12px 15px;
+                         border-radius: 8px;
+                         background: $color-second;
+                         &:hover{
+                            background-color: #a15aff;
+                         }
+                         span{
+                            color: #FFF;
+                            text-align: center;
+                            font-family: Causten;
+                            font-size: 18px;
+                            font-weight: 500;
+                          }
+                          i{
+                            margin-inline: 10px;
+                          }
+                    }
+                    .cancel-btn{
+                        background-color:$color-white;
+                        margin-inline:10px ;
+                        border-radius: 8px;
+                        &:hover{
+                            background-color:#b8b8b8 ;
+                            
+                         }
+                        span{
+                             
+                            color: $color-primary;
+                            text-align: center;
+                            font-family: Causten;
+                            font-size: 18px;
+                            font-weight: 500;
+                        }
+                    }
+          }
+
+ 
+}

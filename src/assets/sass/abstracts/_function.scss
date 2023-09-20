@@ -1,0 +1,181 @@
+@mixin hover-text{
+    box-shadow: 0.2px 0.2px  $color-second;
+    border-bottom: 2px solid  $color-second ;
+}
+
+@mixin style_header{
+    font-family: $font-title;
+    color: $color-dark;
+    font-size: 28px;
+     font-style: normal;
+      font-weight: 600;
+      letter-spacing: 0.56px;
+}
+
+@mixin style_before{
+          width: 7px;
+          height: 25px;
+          background: $color-second;
+          display: inline-block;
+          margin-right:20px ;
+          border-radius: 5px;
+}
+
+@mixin style{
+     color: #FFF;
+     font-family: $font-text;
+     font-size: 22px;
+     font-style: normal;
+     font-weight: 500;
+      line-height: normal;
+      letter-spacing: 0.44px
+}
+
+@mixin icon-style{
+    top: 100%;
+     width: 30px;
+     height: 30px;
+     display: flex;
+     border-radius: 70%;
+     text-indent: 0px;
+     text-decoration: none;
+     i{
+        text-align: center;
+        margin: 7px;
+     }
+}
+
+@mixin prodaction-style{
+      color: $color-white;
+      font-size: 10px;
+      margin-left:10px ;
+      padding: 5px;
+      border-radius: 5px;
+      width: 9px;
+      height: 12px;
+}
+
+@mixin btn-style{
+    background-color: inherit;
+    border: none;
+    outline: none;
+    color: $color-primary;
+    font-family:$font-text;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+@mixin size-style{
+  
+    span{
+        padding: 8px;
+        border: 1px solid $color-primary;
+        background-color: #fff;
+        border-radius: 10px;
+        margin-inline: 15px;
+        width: 40px;
+        display: block;
+        text-align: center;
+        cursor: pointer;
+        
+    }
+
+      .chek:checked +span
+      {
+        background-color: #000;
+        color: #fff;
+       
+      }
+      
+}
+
+@mixin pargh-style{
+    .pargh{
+        padding: 30px;
+        h6{
+            color: $color-dark;
+            font-family: $font-text;
+            margin-top:5px;
+           line-height: 16px; /* 100% */
+          letter-spacing: 0.32px;
+           margin-bottom:0;
+           }
+        p{
+            color: $color-primary;
+            font-family: $font-text; 
+            margin-bottom:0;
+          }
+      } 
+      hr{ 
+        margin: 0;
+        border: 1px solid #BEBCBD;
+        color:#BEBCBD;
+       }
+}
+
+@mixin input-radio{
+    width: 25px;
+    height: 25px;
+   margin-right: 15px;
+   .radio:checked +i
+   {
+    width: 25px;
+     height: 25px; 
+    padding: 4px;
+    border-radius: 15px;
+    
+   }
+}
+
+@mixin button-detalis{
+    span{
+                       
+        font-family: $font-text;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        padding-inline:10px ;
+        color: $color-white;
+    }
+}
+
+@mixin vertical-nav{
+    .Vertical-nav{
+        width: 25%;
+        height: 100%;
+        background-color: #fff;
+        h2{
+            @include style_header;  
+           }
+            & h2::before{
+             content:"";
+            @include  style_before;
+             
+         }
+         p{
+            color: $color-primary;
+            font-family: $font-title;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 33.5px; /* 239.286% */
+            letter-spacing: 0.28px;
+                    }
+
+          ul{
+            padding-top: 15px;
+          }  
+          li{
+            padding-block: 10px;
+            &:hover{
+                width: 100%;
+                background-color: $color-white;
+              
+                // border-radius: 10px;
+                border-left: 1px solid $color-dark;
+            }
+          }        
+
+        }
+    }
