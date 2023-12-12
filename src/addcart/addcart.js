@@ -82,13 +82,7 @@ const Addcart = () => {
 
     return ( 
         <div className="container"> 
-         <div className="way">
-            <h6> 
-                Home 
-                <i className="fa-solid fa-angle-right" style={{color:" #807D7E"}}></i>  
-                 <span> Add To Cart</span>
-             </h6>
-        </div>
+       
 
         <div className="Test">
           <p>Please fill in the fields below and click place order to complete your purchase!</p>

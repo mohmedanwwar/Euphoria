@@ -72,14 +72,7 @@ const Women = () => {
 
                     <div className="col-lg-6 col-md-6">
                         <div className="details-product">
-                            <div className="way">
-                                <h6><a href="#"> Shop</a>  
-                                <i className="fa-solid fa-angle-right" style={{color: "#807D7E"}}></i>
-                                    <a href="#"> Women</a>
-                                    <i className="fa-solid fa-angle-right" style={{color:" #807D7E"}}></i>
-                                    <a href="#">Top</a>
-                                </h6>
-                            </div>
+                          
 
                             <h1>Raven Hoodie With <br />Black colored Design</h1>
 

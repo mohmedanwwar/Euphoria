@@ -59,15 +59,6 @@ const Checkout = () => {
         <div className="container">
              <div className="chechout-seaction">
 
-            <div className="way">
-            <h6> 
-                Home 
-                <i className="fa-solid fa-angle-right" style={{color: "#807D7E"}}></i> 
-                My Account 
-                <i className="fa-solid fa-angle-right" style={{color: "#807D7E"}}></i> 
-                 <span> Check Out</span>
-             </h6>
-             </div>
 
              <div className="row">
 

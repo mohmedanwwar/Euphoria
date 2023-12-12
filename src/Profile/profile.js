@@ -13,15 +13,7 @@ import { Link } from "react-router-dom";
         <div className="container"> 
             <div className="profile-seaction">
 
-                <div className="way">
-                    <h6> 
-                        Home 
-                        <i className="fa-solid fa-angle-right" style={{color: "#807D7E"}}></i> 
-                        My Account 
-                        <i className="fa-solid fa-angle-right" style={{color: "#807D7E"}}></i> 
-                        <span> Personal Info</span>
-                    </h6>
-                </div>
+               
 
                 <div className="row">
 

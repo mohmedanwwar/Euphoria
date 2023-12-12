@@ -7,15 +7,7 @@ const Deliveraddress = () => {
       <div className="container">
          <section className="delivery-address">
               
-            <div className="way">
-            <h6> 
-                Home 
-                <i className="fa-solid fa-angle-right" style={{color: "#807D7E"}}></i> 
-                My Account 
-                <i className="fa-solid fa-angle-right" style={{color:" #807D7E"}}></i> 
-                 <span>  Delivery Address</span>
-             </h6>
-            </div>
+          
 
           <div className="row">
             <nav className="Vertical-nav">
