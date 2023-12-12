@@ -9,7 +9,6 @@ const Addcart = () => {
   const [price1, setPrice1] = useState(119.00);
   const [price2, setPrice2] = useState(123.00);
   const [shipping, setShipping] = useState(5.00);
-  const [total , setTotal] = useState();
 
   const [count, setCount] = useState(0);
   const [count1, setCount1] = useState(0);
