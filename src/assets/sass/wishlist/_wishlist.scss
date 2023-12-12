@@ -1,29 +1,6 @@
 .wishlist-secation{
     width: 100%; 
-    .way{
-    padding-bottom: 45px;
-    width: 100%;
-    h6{
-        color: $color-primary;
-         font-family: $font-text;
-         font-size: 18px;
-         font-weight: 500;
-         line-height: normal;
-         margin: 0;
-         span{
-            color: $color-dark;
-            font-weight: 700;
-         }
-        
-         
-         i{
-            font-size: 15px;
-            margin-inline:10px ;
-          }
-        
-      }
-     
-    }
+   
          @include vertical-nav;
 
          .wishlist{
