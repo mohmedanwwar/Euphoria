@@ -1,16 +1,32 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import myJavaScriptFile from "./range-input.js";
-const VerticlNav = () => {
+const VerticlNav = (props) => {
+
+
+    const [minvalue, setMinvalue] = useState();
+    const [maxvalue, setMaxvalue] = useState();
+    const [value,setValue] = useState([]);
+
 
     const filter = (e)=> {
-        document.querySelector('.Vertical-nav').classList.toggle('shows')
+        console.log("nav00",filterdata)
+
+        const x =  filterdata.filter(item=>item.price > minvalue && item.price < maxvalue )
+         console.log(filterdata[0])
+         console.log(x)
+         setValue(x)
+         
     }
+    console.log("011",value)
+
+    props.item(value);
+
       useEffect(() =>{
 
         const rangeInput = document.querySelectorAll(".range-input input"),
         priceInput = document.querySelectorAll(".price-input input"),
         range = document.querySelector(".slider .progress");
-        let priceGap = 1000;
+        let priceGap = 0;
         priceInput.forEach(input =>{
             input.addEventListener("input", e =>{
                 let minPrice = parseInt(priceInput[0].value),
@@ -27,10 +43,13 @@ const VerticlNav = () => {
                 }
             });
         });
+
         rangeInput.forEach(input =>{
             input.addEventListener("input", e =>{
                 let minVal = parseInt(rangeInput[0].value),
                 maxVal = parseInt(rangeInput[1].value);
+                setMinvalue(minVal)
+                setMaxvalue(maxVal)
                 if((maxVal - minVal) < priceGap){
                     if(e.target.className === "range-min"){
                         rangeInput[0].value = maxVal - priceGap
@@ -42,10 +61,19 @@ const VerticlNav = () => {
                     priceInput[1].value = maxVal;
                     range.style.left = ((minVal / rangeInput[0].max) * 100) + "%";
                     range.style.right = 100 - (maxVal / rangeInput[1].max) * 100 + "%";
+                   
                 }
             });
         });
       })
+
+      const filterdata  =  props.senddata;
+      console.log(filterdata)
+
+      console.log("min;",minvalue);
+      console.log("max",maxvalue)
+
+    
     
     return ( 
 
@@ -55,10 +83,10 @@ const VerticlNav = () => {
         <div className="filter">
             <p>Filter</p>
 
-            <i className="fa-solid fa-filter d-flex" onClick={filter}></i>
+           <button className="btn btn " onClick={filter} ><i className="fa-solid fa-filter d-flex" ></i> </button> 
            
         </div>
-       
+        
             <div className="filters">
                 <div className="accordion accordion-flush" id="accordionFlushExample">
 
