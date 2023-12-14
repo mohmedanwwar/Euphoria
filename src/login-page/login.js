@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import imagelogin from "../assets/images/login.jpeg";
 import twitter from "../assets/images/twitter.png";
 import LoginVeritcal from "./verticalnavlogin";
+import Clock from "../clock/clock";
 
 const Login = ({setToken}) => {
 
@@ -36,8 +37,10 @@ const Login = ({setToken}) => {
 
     return ( 
       <div className="container">
+               {/* <Clock /> */}
     
             <LoginVeritcal />
+     
 
         <div className="row">
                     <div className="image-login col-lg-6 col-md-6 col-sm-12" style={{backgroundImage:`url(${imagelogin})`}}>

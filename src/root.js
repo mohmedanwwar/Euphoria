@@ -13,6 +13,7 @@ import Notfound from "./notfound/notfound.js";
 
 
 
+
 const Root = () => {
     
         return (
@@ -28,6 +29,7 @@ const Root = () => {
                 <Route path="deliveraddress" element={<Deliveraddress />} />
                 <Route path="wishlist" element={<Wishlist />} />
                 <Route path="*" element={<Notfound />} />
+                
       
               </Route>
             </Routes>
