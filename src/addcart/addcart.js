@@ -101,6 +101,7 @@ const Addcart = () => {
             </thead>
 
             <tbody>
+              
               <tr >
 
                 <th scope="row"> 
@@ -138,6 +139,7 @@ const Addcart = () => {
                     </a>
                 </td>
               </tr>
+
               <tr>
 
                 <th scope="row">  

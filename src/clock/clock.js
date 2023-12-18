@@ -31,7 +31,7 @@ const Clock = () => {
 
 
         <div className="">
-            <div className="box">
+            <div className="boxes">
                 <div className="clock">
                 <div className="hour">
                     <div className="hr" id="hr"></div>

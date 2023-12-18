@@ -220,11 +220,11 @@ const VerticlNav = (props) => {
                             <div className="price-input">
 
                                 <div className="filed">
-                                    <input type="number" className="input-min" defaultValue="70"/>
+                                    <input type="number" className="input-min" defaultValue="10"/>
 
                                 </div>
                                 <div className="filed">
-                                    <input type="number" className="input-max" defaultValue= '600'/>
+                                    <input type="number" className="input-max" defaultValue= '300'/>
 
                                 </div>
 
@@ -261,7 +261,7 @@ const VerticlNav = (props) => {
                                         <ul>
                                             <li>
                                             <label htmlFor="Purple"   style={{background: "#8434E1"}}>
-                                            <input type="checkbox" id="Purple" className="radio" name="tt" />
+                                            <input type="checkbox" id="Purple" className="radio" name="colorCheck" />
                                             </label>
                                             </li>
                                             <li>  <span> Purple</span> </li>
@@ -271,7 +271,7 @@ const VerticlNav = (props) => {
                                         <ul>
                                             <li>
                                             <label htmlFor="black"   style={{background: "#232323"}}>
-                                            <input type="checkbox" id="black" className="radio" name="tt" />
+                                            <input type="checkbox" id="black" className="radio" name="colorCheck" />
                                             </label>
                                             </li>
                                             <li>  <span> Black</span> </li>
@@ -281,7 +281,7 @@ const VerticlNav = (props) => {
                                         <ul>
                                             <li>
                                             <label htmlFor="Red"   style={{background: "#F35528"}}>
-                                            <input type="checkbox" id="Red" className="radio" name="tt" />
+                                            <input type="checkbox" id="Red" className="radio" name="colorCheck" />
                                             </label>
                                             </li>
                                             <li>  <span> Red</span> </li>
@@ -291,7 +291,7 @@ const VerticlNav = (props) => {
                                         <ul>
                                             <li>
                                             <label htmlFor="Orange"   style={{background: "#F16F2B"}}>
-                                            <input type="checkbox" id="Orange" className="radio" name="tt" />
+                                            <input type="checkbox" id="Orange" className="radio" name="colorCheck" />
                                             </label>
                                             </li>
                                             <li>  <span> Orange</span> </li>
@@ -305,7 +305,7 @@ const VerticlNav = (props) => {
                                         <ul>
                                             <li>
                                             <label htmlFor="Navy"   style={{background: "#345EFF"}}>
-                                            <input type="checkbox" id="Navy" className="radio" name="tt" />
+                                            <input type="checkbox" id="Navy" className="radio" name="colorCheck" />
                                             </label>
                                             </li>
                                             <li>  <span> Navy</span> </li>
@@ -314,8 +314,8 @@ const VerticlNav = (props) => {
                                         
                                         <ul>
                                             <li>
-                                            <label htmlFor="White"   style={{background: "#fff"}}>
-                                            <input type="checkbox" id="White" className="radio" name="tt" />
+                                            <label htmlFor="White"   style={{background: "#fff",border:"1px solid #F6F6F6"}}>
+                                            <input type="checkbox" id="White" className="radio" name="colorCheck" />
                                             </label>
                                             </li>
                                             <li>  <span> White</span> </li>
@@ -325,7 +325,7 @@ const VerticlNav = (props) => {
                                         <ul>
                                             <li>
                                             <label htmlFor="Broom"   style={{background: "#D67E3B"}}>
-                                            <input type="checkbox" id="Broom" className="radio" name="tt" />
+                                            <input type="checkbox" id="Broom" className="radio" name="colorCheck" />
                                             </label>
                                             </li>
                                             <li>  <span> Broom</span> </li>
@@ -335,7 +335,7 @@ const VerticlNav = (props) => {
                                         <ul>
                                             <li>
                                             <label htmlFor="Grren"   style={{background: "#48BC4E"}}>
-                                            <input type="checkbox" id="Grren" className="radio" name="tt" />
+                                            <input type="checkbox" id="Grren" className="radio" name="colorCheck" />
                                             </label>
                                             </li>
                                             <li>  <span> Grren</span> </li>
@@ -350,7 +350,7 @@ const VerticlNav = (props) => {
                                     <ul>
                                             <li>
                                             <label htmlFor="Yellow"   style={{background: "#FDC761"}}>
-                                            <input type="checkbox" id="Yellow" className="radio" name="tt" />
+                                            <input type="checkbox" id="Yellow" className="radio" name="colorCheck" />
                                             </label>
                                             </li>
                                             <li>  <span> Yellow</span> </li>
@@ -360,7 +360,7 @@ const VerticlNav = (props) => {
                                         <ul>
                                             <li>
                                             <label htmlFor="Grey"   style={{background: "#E4E5E8"}}>
-                                            <input type="checkbox" id="Grey" className="radio" name="tt" />
+                                            <input type="checkbox" id="Grey" className="radio" name="colorCheck" />
                                             </label>
                                             </li>
                                             <li>  <span> Grey   </span> </li>
@@ -370,7 +370,7 @@ const VerticlNav = (props) => {
                                         <ul>
                                             <li>
                                             <label htmlFor="Pink"   style={{background: "#E08D9D"}}>
-                                            <input type="checkbox" id="Pink" className="radio" name="tt" />
+                                            <input type="checkbox" id="Pink" className="radio" name="colorCheck" />
                                             </label>
                                             </li>
                                             <li>  <span> Pink</span> </li>
@@ -380,7 +380,7 @@ const VerticlNav = (props) => {
                                         <ul>
                                             <li>
                                             <label htmlFor="Blue"   style={{background: "#3FDEFF"}}>
-                                            <input type="checkbox" id="Blue" className="radio" name="tt" />
+                                            <input type="checkbox" id="Blue" className="radio" name="colorCheck" />
                                             </label>
                                             </li>
                                             <li>  <span> Blue</span> </li>

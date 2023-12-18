@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import imagelogin from "../assets/images/login.jpeg";
 import twitter from "../assets/images/twitter.png";
 import LoginVeritcal from "./verticalnavlogin";
-import Clock from "../clock/clock";
+
 
 const Login = ({setToken}) => {
 
@@ -29,6 +29,7 @@ const Login = ({setToken}) => {
 
         });
     }
+    console.log(data)
   
     const handleSubmit = async e => {
       e.preventDefault();
@@ -37,7 +38,7 @@ const Login = ({setToken}) => {
 
     return ( 
       <div className="container">
-               {/* <Clock /> */}
+             
     
             <LoginVeritcal />
      

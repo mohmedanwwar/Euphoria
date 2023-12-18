@@ -1,0 +1,37 @@
+  .person{
+    display: flex;
+    align-items: center;
+padding: 5px;
+    border: 1px solid #b4aaaae8;
+    margin: 10px;
+    border-radius: 15px;
+    width: 100%;
+    background-color: $color-white;
+    justify-content: space-around;
+    
+  }
+  .imagePerson{
+     width: 100px;
+     height: 100px;
+     border-radius: 50px;
+     margin-right: 30px;
+  }
+  .trash{
+    color: rgb(220, 53, 69);
+    font-size: 20px;
+  }
+  .mes{
+    color: rgb(35, 172, 35);
+    font-size: 20px;
+
+  }
+  .Icons{
+    width: 120px;
+
+    display: flex;
+    justify-content: space-between;
+  }
+  .lenght{
+    color: white;
+    font-size: 10px;
+  }
