@@ -10,7 +10,8 @@ import Chechout from "./checkout/chechout.js";
 import Addcart from "./addcart/addcart.js";
 import Layout from "./layout/layout.js";
 import Notfound from "./notfound/notfound.js";
-import DisplayBirthday from "./Birthday/displayBrithday.js";
+
+// import DisplayBirthday from "./Birthday/displayBrithday.js";
 
 
 
@@ -33,7 +34,7 @@ const Root = () => {
                   <Route path="addcart" element={<Addcart />} />
                   <Route path="deliveraddress" element={<Deliveraddress />} />
                   <Route path="wishlist" element={<Wishlist />} />
-                  <Route path="Birthday" element={<DisplayBirthday />} />
+ 
 
                 <Route path="*" element={<Notfound />} />
                 

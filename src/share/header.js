@@ -17,15 +17,17 @@ const Header = () => {
   let year = objectDate.getFullYear();
 
     const birthDay = people.filter((person)=>person.mounth === monthbirth && person.day === day  )
-    console.log(birthDay) 
-    console.log(birthDay.length)
+
     const lenght = birthDay.length
 
     const clearAllRecords =()=> {
       setPeople([])
     }
     
-
+    const DarkLight = () => {
+      let element = document.body;
+      element.classList.toggle("dark-mode");
+   }
 
 
     return (
@@ -67,14 +69,15 @@ const Header = () => {
         </div>
          
         <div className="d-flex ">
+          
           <div className="icon"> <Link to="#"><i className="fa-regular fa-heart" ></i> </Link></div>
           <div className="icon active"> <Link to="/Profile"><i className="fa-regular fa-user" ></i></Link> </div>
           <div className="icon"> <Link to="/Addcart"><i className="fa-solid fa-cart-shopping" ></i></Link></div>
           <div className="icon">
-                  <button type="button" className='btn btn' data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      <button type="button" className='btn btn' data-bs-toggle="modal" data-bs-target="#exampleModal">
                       <i className="fa-solid fa-cake-candles">
                         {(birthDay.length === 0)?(<Fragment></Fragment>):(
-                          <span className="position-absolute top-25 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+                          <span className="position-absolute  translate-middle p-2 bg-danger border border-light rounded-circle">
                                     <div className='lenght'> {lenght}</div> 
                                   </span>  
                           )} 
@@ -104,6 +107,7 @@ const Header = () => {
                                 ( <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>):(
                                 <button  type="button"  className='btn btn-danger' data-bs-dismiss="modal"   onClick={clearAllRecords}>Clear All</button>) } 
                              {/* <button type="button" className="btn btn-primary">Save changes</button> */}
+
      
                            </div>
                          </div>
@@ -113,12 +117,17 @@ const Header = () => {
              
                 
             </div>
+
+          <div className="icon"> <button className='btn btn' onClick={()=>DarkLight()} ><i className="fa-regular fa-moon moon"></i> </button></div>
+     
+
          </div>
 
       </div>
       
      
        </nav>
+
        
           </div>
            

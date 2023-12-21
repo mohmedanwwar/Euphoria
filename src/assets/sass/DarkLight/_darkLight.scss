@@ -1,0 +1,41 @@
+body {
+    background-color: white;
+  }
+  .dark-mode {
+    background-color: rgb(15, 11, 11);
+    color: white;
+    .moon{
+        font-weight: 900;
+    }
+  }
+  .chngecolor{
+    border-radius: 50px;
+    .colorpicker{
+        .person{
+            position: fixed;
+            font-size: 30px;
+             top: 90%;
+             left: 6%;
+             color: rgb(236, 218, 218);
+             z-index: 2;
+             background-color: white;
+           }
+        .colors{
+            position: fixed;
+             top: 90%;
+             left: 5%;
+              z-index: 1;
+              width: 50px;
+              height: 40px;
+              border-radius: 70px;
+              cursor: pointer;
+              box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 10px 10px rgba(0,0,0,0.23);
+              border: 30px solid white;
+              &:hover{
+                 box-shadow: 0px 0px 30px 5px #4e4e4e;
+              }
+         }
+    }
+    
+
+  }

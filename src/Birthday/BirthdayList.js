@@ -4,6 +4,21 @@ import data from './data';
 
 const BirthdayList = () => {
 
+    // Sum Two arr and sorting less tahn to greater than 
+
+    const compareNumbers= (a, b) => { 
+        return b - a;
+      }
+    
+    const arrNumber = [1,70,50,40,2,3,4,12,30,100]
+    const arrNumber1= [5,80,60,0,6,13,14,10,20,110]
+    const sumArr = arrNumber.concat(arrNumber1)
+  
+     console.log(sumArr)
+        console.log("Sum Two arr and sorting less tahn to greater than ",sumArr.sort(compareNumbers))
+
+        // 0000000000000000000000000000000000000000000000000000000000
+
     const [people, setPeople] = useState(data)
 
 
@@ -27,6 +42,7 @@ const BirthdayList = () => {
    
    
 }
+console.log(people)
     
    const Age = birthDay.map((age)=>{
     return(
@@ -35,21 +51,23 @@ const BirthdayList = () => {
    })
 
 
+
 const calculateAge = (birthdate) => {
     const birthDate = new Date(birthdate);
     const currentDate = new Date();
     let age = currentDate.getFullYear() - birthDate.getFullYear(); 
+    console.log("00",birthDate)
     return age;
   }
-  
 
   const birthdate = Age; 
   const age = calculateAge(birthdate);
+  console.log(birthDay)
+  console.log(age)
 
   const sendMassege = (id) =>{
 
     const massege = birthDay.filter((person) => person.id === id)
-    console.log(massege)
     const name = massege[0]?.name 
     console.log(`Happy Birthday to : ${name} 🎉`) 
   }

@@ -4,6 +4,7 @@
   import Footer from "../share/footer.js";
   import Breadcrumb from "../share/breadcrumb.js";
 import { Outlet } from "react-router-dom";
+import ChangeColor from "../color/ColorBody.js";
 
 
 const Layout = () => {
@@ -12,6 +13,7 @@ const Layout = () => {
   
         <Header/>
           <Breadcrumb />
+          <ChangeColor />
            <Outlet />
           <Footer />
       </div>
