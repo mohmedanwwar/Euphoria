@@ -14,8 +14,7 @@ const Addcart = () => {
   const [count1, setCount1] = useState(0);
   const [count2, setCount2] = useState(0);
 
-
-   
+  
     const handleIncrement = () => {
       setCount(count + 1);
     };
@@ -81,8 +80,8 @@ const Addcart = () => {
 
     return ( 
         <div className="container"> 
-       
 
+  
         <div className="Test">
           <p>Please fill in the fields below and click place order to complete your purchase!</p>
         <p>Already registered?<a href="#">  Please login here</a></p>
@@ -101,6 +100,7 @@ const Addcart = () => {
             </thead>
 
             <tbody>
+              
               <tr >
 
                 <th scope="row"> 
@@ -138,6 +138,7 @@ const Addcart = () => {
                     </a>
                 </td>
               </tr>
+
               <tr>
 
                 <th scope="row">  
@@ -268,6 +269,8 @@ const Addcart = () => {
               </div> 
             </div>
           </div>
+
+   
 
         </div>   
      );

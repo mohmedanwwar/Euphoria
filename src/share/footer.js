@@ -93,9 +93,9 @@ const Footer = () => {
                           </button>
                         </h2>
                         <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                          <div class="accordion-body">
-                                    <p>...</p>
-                          </div>
+                            <div class="accordion-body">
+                                      <p>...</p>
+                            </div>
                         </div>
                       </div>
                       <hr/>

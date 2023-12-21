@@ -3,6 +3,7 @@ import imagelogin from "../assets/images/login.jpeg";
 import twitter from "../assets/images/twitter.png";
 import LoginVeritcal from "./verticalnavlogin";
 
+
 const Login = ({setToken}) => {
 
     const [username, setUserName] = useState();
@@ -28,6 +29,7 @@ const Login = ({setToken}) => {
 
         });
     }
+    console.log(data)
   
     const handleSubmit = async e => {
       e.preventDefault();
@@ -36,8 +38,10 @@ const Login = ({setToken}) => {
 
     return ( 
       <div className="container">
+             
     
             <LoginVeritcal />
+     
 
         <div className="row">
                     <div className="image-login col-lg-6 col-md-6 col-sm-12" style={{backgroundImage:`url(${imagelogin})`}}>

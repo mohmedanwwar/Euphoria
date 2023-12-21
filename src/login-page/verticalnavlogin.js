@@ -2,6 +2,8 @@ import React from "react";
 import logo from "../assets/images/logo.png";
 import { Link } from "react-router-dom";
 
+import Clock from "../clock/clock";
+
 const LoginVeritcal = () => {
     return ( 
         <nav className="navbar navbar-expand-lg  ">
@@ -44,6 +46,7 @@ const LoginVeritcal = () => {
                             <button type="button" class="btn-sign btn-outline-primary"> <span>Sign Up</span></button>
                         </div>
                     </div>
+                    <Clock/>
         </nav>
      );
 }
