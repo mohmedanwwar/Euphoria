@@ -6,6 +6,8 @@ const ProductList = () => {
     const [fulldata,setFullData] = useState([])
     const [fiter,setFilter] = useState([])
 
+    
+
 
     const pull_data = (data) => {
         setFullData(data);
