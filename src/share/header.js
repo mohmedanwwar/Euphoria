@@ -10,16 +10,23 @@ const Header = () => {
   const [people, setPeople] = useState(data)
 
 
+
   let objectDate = new Date();
   let day = objectDate.getDate();
   let month = objectDate.getMonth();
   let monthbirth = month + 1
   let year = objectDate.getFullYear();
 
-    const birthDay = people.filter((person)=>person.mounth === monthbirth && person.day === day  )
+    const birthDay = people.filter((person)=>person.mounth === monthbirth && person.day === day)
+    const [list,setList] = useState(birthDay);
+    
 
-    const lenght = birthDay.length
-
+    const pull_data = (newlist) => {
+      setList(newlist);
+    }
+    const lenght = list.length
+    
+  
     const clearAllRecords =()=> {
       setPeople([])
     }
@@ -91,21 +98,21 @@ const Header = () => {
                            <div className="modal-header">
                              <h1 className="modal-title fs-5" id="exampleModalLabel"> 
                                {(birthDay.length === 0) ? (<Fragment></Fragment>):(<Fragment>
-                                Happy Birthday to:{birthDay.map((person)=>{return(<div className='name'><strong>{person.name} 🎉 </strong></div>)})}
+                                Happy Birthday to:{birthDay.map((person)=>{return(<div className='name' data-id={person.id}><strong>{person.name} 🎉 </strong></div>)})}
                                </Fragment>)}</h1>
      
                            </div>
 
                                {(birthDay.length === 0)?(<Fragment> <h2>No Data Available </h2> </Fragment>):( 
                                   <div className="modal-body">
-                                    <BirthdayList />
+                                    <BirthdayList func={pull_data}/>
                                 </div>
                                   )}
                             
                            <div className="modal-footer">
                                 {(birthDay.length === 0)?
                                 ( <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>):(
-                                <button  type="button"  className='btn btn-danger' data-bs-dismiss="modal"   onClick={clearAllRecords}>Clear All</button>) } 
+                                <button  type="button" id="clear" className='btn btn-danger' data-bs-dismiss="modal"   onClick={clearAllRecords}>Clear All</button>) } 
                              {/* <button type="button" className="btn btn-primary">Save changes</button> */}
 
      

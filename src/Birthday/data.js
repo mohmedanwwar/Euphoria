@@ -5,7 +5,7 @@ export default[
         day: 18,
         mounth: 12,
         year : 1990,
-        dob: 1990-12-18,
+        dob: "1990-12-18",
         title: "front-end",
         image: 'https://images.unsplash.com/photo-1499952127939-9bbf5af6c51c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=876&q=80',
     },
@@ -56,7 +56,7 @@ export default[
         day: 25,
         mounth: 12,
         year : 1999,
-        dob: 1999-12-25,
+        dob: "1999-12-25",
         title: "front-end",
         image: `https://images.unsplash.com/photo-1589571894960-20bbe2828d0a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=386&q=80`,
     
@@ -64,10 +64,10 @@ export default[
       {
         id:8,
         name: "Ben Parker",
-        day: 26,
+        day: 27,
         mounth: 12,
         year : 2000,
-        dob: 2000-12-26,
+        dob: "2000-12-26",
         title: "back-end",
         image: `https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80`,
       
@@ -75,10 +75,10 @@ export default[
       {
         id:9,
         name: "Mason Wilkes",
-        day: 27,
+        day: 24,
         mounth: 12,
         year : 1997,
-        dob: 1997-12-27,
+        dob: "1997-12-27",
         title: "flutter",
         image: `https://images.unsplash.com/photo-1507591064344-4c6ce005b128?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80`,
        
@@ -86,10 +86,10 @@ export default[
       {
         id:10,
         name: "Kelly Sikkema",
-        day: 28,
+        day: 24,
         mounth: 12,
         year : 1993,
-        dob: 1993-12-28,
+        dob: "1993-12-28",
         title: "devOps",
         image: `https://images.unsplash.com/photo-1499952127939-9bbf5af6c51c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=876&q=80`,
       
