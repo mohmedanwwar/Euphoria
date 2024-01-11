@@ -77,7 +77,7 @@ const Header = () => {
          
         <div className="d-flex ">
           
-          <div className="icon"> <Link to="#"><i className="fa-regular fa-heart" ></i> </Link></div>
+          <div className="icon"> <Link to="/wishlist"><i className="fa-regular fa-heart" ></i> </Link></div>
           <div className="icon active"> <Link to="/Profile"><i className="fa-regular fa-user" ></i></Link> </div>
           <div className="icon"> <Link to="/Addcart"><i className="fa-solid fa-cart-shopping" ></i></Link></div>
           <div className="icon">

@@ -44,7 +44,8 @@ const BirthdayList = (props) => {
 
             const birthDay = peopleWithAge.filter((person)=>person.mounth === monthbirth && person.day === day) 
 
-          const clear = document.querySelector("#clear")
+
+       
       const  Delete = (e,id) =>{
         const index =   e.target.closest(".person")
         console.log(index)
@@ -60,10 +61,9 @@ const BirthdayList = (props) => {
 
            props.func(newlist)
 
+           const clear = document.querySelector("#clear")
 
-
-
-        if(newlist.length === 0){
+        if(newlist.length === 0 ){
         console.log("empty",newlist)
         clear.click();
 
