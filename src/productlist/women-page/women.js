@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Rectangle2 from "../../assets/images/Rectangle 2.png";
 import Rectangle from "../../assets/images/Rectangle 13.png";
 import Rectangle3 from "../../assets/images/Rectangle 10 (1).png" ;
@@ -12,8 +12,10 @@ import man3 from "../../assets/images/man3.jpeg" ;
 import man4 from "../../assets/images/man4.jpeg" ;
 import man5 from "../../assets/images/man5.jpeg" ;
 import { Link } from "react-router-dom";
+import { Rating } from "primereact/rating";
 
 const Women = () => {
+    const [value, setValue] = useState(null);
     return ( 
 
         <><section className="prodetails">
@@ -77,11 +79,14 @@ const Women = () => {
                             <h1>Raven Hoodie With <br />Black colored Design</h1>
 
                             <div className="star">
+                                    <div className="card flex justify-content-center">
+                                        <Rating value={value} onChange={(e) => setValue(e.value)} />
+                                    </div>
+                                {/* <i className="fa-solid fa-star" style={{color: "#EDD146"}}></i>
                                 <i className="fa-solid fa-star" style={{color: "#EDD146"}}></i>
                                 <i className="fa-solid fa-star" style={{color: "#EDD146"}}></i>
                                 <i className="fa-solid fa-star" style={{color: "#EDD146"}}></i>
-                                <i className="fa-solid fa-star" style={{color: "#EDD146"}}></i>
-                                <i className="fa-solid fa-star" style={{color: "#EDD146"}}></i>
+                                <i className="fa-solid fa-star" style={{color: "#EDD146"}}></i> */}
                                 <span>3.5</span>
                                 <i className="fa-regular fa-comment-dots" style={{color: "#807D7E"}}></i>
                                 <p>120 comment</p>
